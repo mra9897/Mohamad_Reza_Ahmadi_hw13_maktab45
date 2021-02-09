@@ -14,10 +14,6 @@ app.use('/', (req,res,next)=>{
     next();
 });
 
-// app.get('/show',((req, res) => {
-//     res.sendFile(path.join(__dirname,'public','show.html'));
-// }));
-
 app.use('/food', FOOD);
 
 app.listen(PORT, ()=>console.log("app is running on port "+PORT));

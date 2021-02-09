@@ -12,7 +12,7 @@
 <body>
 <div id="header"></div>
 <div class="container mt-5r">
-    <div class="d-flex justify-content-center flex-column border pb-3">
+    <div class="d-flex justify-content-center flex-column border bg-content pb-3">
         <div class="o-box rounded" id="name"></div>
         <img src="" alt="pizza" id="image" class="food-image mt-3 rounded-1_5">
         <div class="o-box mt-5 rounded position-relative w-100 d-flex justify-content-between">
@@ -21,9 +21,9 @@
             Like
             </span>
             <span class="count-info">
-                <button class="btn btn-light l-circle" id="up">+</button>
+                <button class="btn btn-light l-circle" id="down">-</button>
                 <button class="btn btn-light rounded-0" id="count">1</button>
-                <button class="btn btn-light r-circle" id="down">-</button>
+                <button class="btn btn-light r-circle" id="up">+</button>
             </span>
             <span class="save">
                 <i class="bi bi-star" id="star"></i>
@@ -34,7 +34,7 @@
             <h2 class=" text-center">Food Information</h2>
             <hr>
             <div class="row">
-                <div class="col-md-12 col-lg-6">
+                <div class="col-md-12">
                     <b>Description: </b>
                     <span id="description"></span>
                 </div>
@@ -57,6 +57,10 @@
                 <div class="col-md-12 col-lg-6">
                     <b>Price: </b>
                     <span id="price"></span>$
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <b>Discount: </b>
+                    <span id="discount"></span>%
                 </div>
             </div>
         </div>

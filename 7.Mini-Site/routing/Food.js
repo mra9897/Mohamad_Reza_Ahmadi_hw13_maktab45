@@ -11,7 +11,6 @@ router.get('/read/:id', (req, res) => {
 });
 
 router.get('/:foodType', (req,res)=>{
-    console.log('im in')
     res.json(JSON.stringify(res.foods.filter(v=>v.type === req.params.foodType)));
 });
 

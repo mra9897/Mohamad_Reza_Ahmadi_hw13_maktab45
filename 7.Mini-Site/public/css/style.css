@@ -111,27 +111,40 @@ svg{
 .count-info{
     width: fit-content;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    border-radius: 30%;
+    background: #fff;
     top: -13px;
     left: 50%;
     transform: translateX(-50%);
 }
 .count-info button{
-    margin: 0 -5px;
+    margin: 0 -3px;
     font-size: 3rem;
-    border: 1px solid;
     padding: 0 30px;
 }
 .l-circle{
     border-radius: 50% 0 0 50%;
+    border-right: 1px solid;
 }
 .r-circle{
     border-radius: 0 50% 50% 0;
+    border-left: 1px solid;
 }
 span i{
     color: #ff6b6b;
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(0deg);
 }
-.activeIcon{color: #e74c3c}
+.activeIcon{
+    color: #e74c3c;
+    animation: hey 450ms linear;
+}
+@keyframes hey {
+    25% {transform: rotate(65deg)}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-65deg);}
+    100% {transform: rotate(0deg);}
+}
 b {color: #f1c40f}
+.bg-content{background: #ecf0f1}
